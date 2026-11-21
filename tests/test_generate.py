@@ -91,6 +91,28 @@ class ParsingTests(unittest.TestCase):
         self.assertIn("<img ", items[0].findtext("{http://purl.org/rss/1.0/modules/content/}encoded"))
         self.assertEqual(items[0].findtext("{http://purl.org/dc/elements/1.1/}creator"), "作家A")
 
+    def test_rss_uses_original_x_post_time_and_newest_first(self):
+        from generate import post_published_at, newest_first
+        newer = Post(
+            post_id="2123966340323225683", text="新しい投稿", display_name="作家N",
+            username="artist_n", url="https://x.com/artist_n/status/2123966340323225683",
+            first_seen="2026-11-21T08:40:20+00:00",
+        )
+        older = Post(
+            post_id="2123941217771868334", text="古い投稿", display_name="作家O",
+            username="artist_o", url="https://x.com/artist_o/status/2123941217771868334",
+            first_seen="2026-11-21T08:40:20+00:00",
+        )
+        now = datetime(2026, 11, 21, 9, 0, tzinfo=timezone.utc)
+        self.assertEqual(post_published_at(newer, now).strftime("%Y-%m-%d %H:%M"), "2026-11-21 02:26")
+        self.assertEqual(post_published_at(older, now).strftime("%Y-%m-%d %H:%M"), "2026-11-21 00:47")
+        self.assertEqual([p.post_id for p in newest_first([older, newer], now)], [newer.post_id, older.post_id])
+        root = ET.fromstring(xml_bytes([older, newer], now))
+        items = root.findall("./channel/item")
+        self.assertEqual([x.findtext("title") for x in items], ["新しい投稿", "古い投稿"])
+        self.assertEqual(items[0].findtext("pubDate"), "Sat, 21 Nov 2026 02:26:51 +0000")
+        self.assertEqual(items[1].findtext("pubDate"), "Sat, 21 Nov 2026 00:47:01 +0000")
+
     def test_empty_or_changed_html_fails_safely(self):
         with self.assertRaises(ValueError):
             parse_buzzweet("<html><p>forbidden</p></html>", page_url(1))

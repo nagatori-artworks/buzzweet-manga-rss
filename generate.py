@@ -36,6 +36,7 @@ JST = timezone(timedelta(hours=9))
 MAX_PAGES = 3
 MAX_FEED_ITEMS = 250
 MAX_SEEN_IDS = 5000
+X_SNOWFLAKE_EPOCH_MS = 1288834974657
 MEDIA_NS = "http://search.yahoo.com/mrss/"
 CONTENT_NS = "http://purl.org/rss/1.0/modules/content/"
 DC_NS = "http://purl.org/dc/elements/1.1/"
@@ -344,6 +345,30 @@ def enrich_with_fx(session: requests.Session, post: Post) -> Post:
     return post
 
 
+def post_published_at(post: Post, fallback: datetime) -> datetime:
+    """Use the original X post time encoded in its snowflake status ID.
+
+    first_seen is kept separately for history/deduplication, not RSS sorting.
+    """
+    try:
+        if post.post_id.isdecimal():
+            created_ms = (int(post.post_id) >> 22) + X_SNOWFLAKE_EPOCH_MS
+            created = datetime.fromtimestamp(created_ms / 1000, tz=timezone.utc)
+            if datetime(2010, 11, 4, tzinfo=timezone.utc) <= created <= fallback + timedelta(days=1):
+                return created
+    except (OSError, OverflowError, ValueError):
+        pass
+    try:
+        observed = datetime.fromisoformat(post.first_seen)
+        return observed if observed.tzinfo else observed.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        return fallback
+
+
+def newest_first(posts: list[Post], now: datetime) -> list[Post]:
+    return sorted(posts, key=lambda post: (post_published_at(post, now), post.post_id), reverse=True)
+
+
 def xml_bytes(posts: list[Post], now: datetime) -> bytes:
     rss = ET.Element("rss", {"version": "2.0"})
     channel = ET.SubElement(rss, "channel")
@@ -353,16 +378,12 @@ def xml_bytes(posts: list[Post], now: datetime) -> bytes:
     ET.SubElement(channel, "language").text = "ja"
     ET.SubElement(channel, "lastBuildDate").text = format_datetime(now)
     ET.SubElement(channel, "generator").text = "BuzzweetMangaRSS"
-    for post in posts:
+    for post in newest_first(posts, now):
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = post.text or "画像付き投稿"
         ET.SubElement(item, "link").text = post.url
         ET.SubElement(item, "guid", {"isPermaLink": "false"}).text = f"buzzweet-x-{post.post_id}"
-        try:
-            dt = datetime.fromisoformat(post.first_seen)
-        except (TypeError, ValueError):
-            dt = now
-        ET.SubElement(item, "pubDate").text = format_datetime(dt)
+        ET.SubElement(item, "pubDate").text = format_datetime(post_published_at(post, now))
         summary = f"{post.display_name}｜{FEED_TITLE}" if post.display_name else FEED_TITLE
         ET.SubElement(item, "description").text = summary
         if post.display_name:
@@ -483,12 +504,12 @@ def main() -> int:
         time.sleep(0.3)
     logging.info("新規投稿のサムネイル取得: %d/%d件", enriched_count, len(fresh))
 
-    # Prefer first-seen order; when many posts are discovered in one run, keep
-    # Buzzweet page display order. Do not rewrite the IDs/dates of existing RSS items.
+    # Keep first_seen for discovery history, but publish and sort by X post time.
+    # X snowflake timestamps work even when multiple posts are first seen together.
     for post in fresh:
         post.first_seen = now.isoformat()
     fresh_ids = {p.post_id for p in fresh}
-    all_posts = (fresh + [p for p in old_posts if p.post_id not in fresh_ids])[:MAX_FEED_ITEMS]
+    all_posts = newest_first(fresh + [p for p in old_posts if p.post_id not in fresh_ids], now)[:MAX_FEED_ITEMS]
     recent_seen = list(dict.fromkeys([p.post_id for p in scanned] + list(state.get("seen_ids", []))))[:MAX_SEEN_IDS]
 
     latest_state = {

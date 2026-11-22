@@ -1,12 +1,21 @@
 {
-  "anchor_id": "2124156927181791413",
-  "last_full_scan_jst": "2026-11-22",
+  "anchor_id": "2124337078502629618",
+  "last_full_scan_jst": "2026-11-23",
   "seen_ids": [
+    "2124337078502629618",
+    "2124333039698555199",
+    "2124291772352172060",
+    "2124269125228712212",
+    "2124252005246058690",
+    "2124182300669964402",
     "2124156927181791413",
+    "2124155881252376812",
+    "2124155636976153006",
     "2124148142925140337",
     "2124126201841418278",
     "2124097238771396721",
     "2124095484772159511",
+    "2124095306002559436",
     "2124091437247856726",
     "2124089200056402070",
     "2124088962423914689",
@@ -78,6 +87,60 @@
   ],
   "posts": [
     {
+      "post_id": "2124337078502629618",
+      "text": "画像付き投稿",
+      "display_name": "𝐴𝑣𝑒𝑛𝑡𝑎𝑑𝑜𝑟",
+      "username": "aventador_770_4",
+      "url": "https://x.com/aventador_770_4/status/2124337078502629618",
+      "image_url": "https://pbs.twimg.com/media/HXsd0KwbsAAC2KU.jpg?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
+    },
+    {
+      "post_id": "2124333039698555199",
+      "text": "名曲なんだけどね…",
+      "display_name": "伊東",
+      "username": "ito_44",
+      "url": "https://x.com/ito_44/status/2124333039698555199",
+      "image_url": "https://pbs.twimg.com/media/HXslel_aIAANnXq.png?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
+    },
+    {
+      "post_id": "2124291772352172060",
+      "text": "かみさまキツネと冬毛の季節　まとめ読み\n#かみさまキツネとサラリーマン",
+      "display_name": "ヤシン",
+      "username": "Y_ashi_n",
+      "url": "https://x.com/Y_ashi_n/status/2124291772352172060",
+      "image_url": "https://pbs.twimg.com/media/HXnAgI8aAAARAsR.jpg?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
+    },
+    {
+      "post_id": "2124269125228712212",
+      "text": "聖徳太子の真実",
+      "display_name": "伊東",
+      "username": "ito_44_3",
+      "url": "https://x.com/ito_44_3/status/2124269125228712212",
+      "image_url": "https://pbs.twimg.com/media/HXnRwV0aoAAjLgQ.png?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
+    },
+    {
+      "post_id": "2124252005246058690",
+      "text": "おはようございまーす！\n今日は早朝からアグネスタキオンのイラスト投稿\nアグネスフライトもこないかなぁ…\nシャカールとも絡めるから来たら嬉しいなぁ",
+      "display_name": "坂崎ふれでぃ",
+      "username": "lunaticmonster",
+      "url": "https://x.com/lunaticmonster/status/2124252005246058690",
+      "image_url": "https://pbs.twimg.com/media/HXrbhzxboAARJad.jpg?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
+    },
+    {
+      "post_id": "2124182300669964402",
+      "text": "豆スガキ3",
+      "display_name": "tenten",
+      "username": "tentenchan2525",
+      "url": "https://x.com/tentenchan2525/status/2124182300669964402",
+      "image_url": "https://pbs.twimg.com/media/HXqbzDhbMAAFGwO.jpg?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
+    },
+    {
       "post_id": "2124156927181791413",
       "text": "🙌",
       "display_name": "ちいかわアニメ火金",
@@ -85,6 +148,24 @@
       "url": "https://x.com/ngnchiikawa/status/2124156927181791413",
       "image_url": "https://pbs.twimg.com/media/HXqFdx7aMAAQzUY.jpg?name=orig",
       "first_seen": "2026-11-21T23:29:44.960002+00:00"
+    },
+    {
+      "post_id": "2124155881252376812",
+      "text": "画像付き投稿",
+      "display_name": "ベネ",
+      "username": "be_ne_69",
+      "url": "https://x.com/be_ne_69/status/2124155881252376812",
+      "image_url": "https://pbs.twimg.com/media/HXqEhA3aoAAkvBD.jpg?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
+    },
+    {
+      "post_id": "2124155636976153006",
+      "text": "画像付き投稿",
+      "display_name": "加藤拓弐",
+      "username": "isiyumi",
+      "url": "https://x.com/isiyumi/status/2124155636976153006",
+      "image_url": "https://pbs.twimg.com/media/HXqER2FakAEdn4m.png?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
     },
     {
       "post_id": "2124148142925140337",
@@ -121,6 +202,15 @@
       "url": "https://x.com/ito_44_3/status/2124095484772159511",
       "image_url": "https://pbs.twimg.com/media/HXnSG97bcAIAuGN.jpg?name=orig",
       "first_seen": "2026-11-21T23:29:44.960002+00:00"
+    },
+    {
+      "post_id": "2124095306002559436",
+      "text": "Re",
+      "display_name": "若林稔弥Toshiya Wakabayashi",
+      "username": "sankakujougi",
+      "url": "https://x.com/sankakujougi/status/2124095306002559436",
+      "image_url": "https://pbs.twimg.com/media/HXpNYhSbkAAjvDE.jpg?name=orig",
+      "first_seen": "2026-11-22T16:29:10.106371+00:00"
     },
     {
       "post_id": "2124091437247856726",

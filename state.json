@@ -1,9 +1,15 @@
 {
-  "anchor_id": "2124516087484301600",
+  "anchor_id": "2124631511362121991",
   "last_full_scan_jst": "2026-11-23",
   "seen_ids": [
+    "2124631511362121991",
+    "2124523000242573439",
     "2124516087484301600",
+    "2124513362033938824",
+    "2124512165415759915",
     "2124495400262635700",
+    "2124489246916726878",
+    "2124469474346615010",
     "2124457865788244194",
     "2124454864923283804",
     "2124450818728366578",
@@ -113,6 +119,24 @@
   ],
   "posts": [
     {
+      "post_id": "2124631511362121991",
+      "text": "乱入者",
+      "display_name": "伊東",
+      "username": "ito_44_3",
+      "url": "https://x.com/ito_44_3/status/2124631511362121991",
+      "image_url": "https://pbs.twimg.com/media/HXsMJPBa8AADAoy.png?name=orig",
+      "first_seen": "2026-11-23T07:55:59.923867+00:00"
+    },
+    {
+      "post_id": "2124523000242573439",
+      "text": "シークの正体を知ったリンク君",
+      "display_name": "わさび",
+      "username": "legend7749",
+      "url": "https://x.com/legend7749/status/2124523000242573439",
+      "image_url": "https://pbs.twimg.com/media/HXvSNsibEAAH3nY.jpg?name=orig",
+      "first_seen": "2026-11-23T07:55:59.923867+00:00"
+    },
+    {
       "post_id": "2124516087484301600",
       "text": "矜持の絵です。",
       "display_name": "堀出井靖水／新作漫画毎日投稿",
@@ -122,6 +146,24 @@
       "first_seen": "2026-11-22T23:41:16.244966+00:00"
     },
     {
+      "post_id": "2124513362033938824",
+      "text": "pixivFANBOXでロンロンミルク(裏メニュー)を公開しました！\nhttps://legend7749.fanbox.cc/posts/12975087?utm_campaign=manage_post_page&utm_medium=share&utm_source=twitter",
+      "display_name": "わさび",
+      "username": "legend7749",
+      "url": "https://x.com/legend7749/status/2124513362033938824",
+      "image_url": "https://pbs.twimg.com/media/HXvJn0lbMAAB5st.jpg?name=orig",
+      "first_seen": "2026-11-23T07:55:59.923867+00:00"
+    },
+    {
+      "post_id": "2124512165415759915",
+      "text": "画像付き投稿",
+      "display_name": "加藤拓弐",
+      "username": "isiyumi",
+      "url": "https://x.com/isiyumi/status/2124512165415759915",
+      "image_url": "https://pbs.twimg.com/media/HXvIguVacAAVe_l.png?name=orig",
+      "first_seen": "2026-11-23T07:55:59.923867+00:00"
+    },
+    {
       "post_id": "2124495400262635700",
       "text": "🙌",
       "display_name": "ちいかわアニメ火金",
@@ -129,6 +171,24 @@
       "url": "https://x.com/ngnchiikawa/status/2124495400262635700",
       "image_url": "https://pbs.twimg.com/media/HXu5THsa4AEVoNM.jpg?name=orig",
       "first_seen": "2026-11-22T23:41:16.244966+00:00"
+    },
+    {
+      "post_id": "2124489246916726878",
+      "text": "⚠️先生の共通ボイス(魔法LvUP)ネタ\n噛みつく(？)🦐",
+      "display_name": "こう",
+      "username": "koou_san",
+      "url": "https://x.com/koou_san/status/2124489246916726878",
+      "image_url": "https://pbs.twimg.com/media/HXuztZkbcAA96m0.jpg?name=orig",
+      "first_seen": "2026-11-23T07:55:59.923867+00:00"
+    },
+    {
+      "post_id": "2124469474346615010",
+      "text": "前に描いたかわいそうなギャルまとめ",
+      "display_name": "DiZ",
+      "username": "dizsonyasuna",
+      "url": "https://x.com/dizsonyasuna/status/2124469474346615010",
+      "image_url": "https://pbs.twimg.com/media/HXuhrVuaIAAlVC8.jpg?name=orig",
+      "first_seen": "2026-11-23T07:55:59.923867+00:00"
     },
     {
       "post_id": "2124457865788244194",

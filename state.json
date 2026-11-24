@@ -1,9 +1,14 @@
 {
-  "anchor_id": "2124874810572566772",
-  "last_full_scan_jst": "2026-11-24",
+  "anchor_id": "2125058580462317760",
+  "last_full_scan_jst": "2026-11-25",
   "seen_ids": [
+    "2125058580462317760",
+    "2125019020525281575",
+    "2124993898007367935",
+    "2124906077158531492",
     "2124874810572566772",
     "2124873319476523499",
+    "2124842303118627240",
     "2124839297341932005",
     "2124832208926195979",
     "2124825349129441298",
@@ -16,11 +21,15 @@
     "2124812947730129118",
     "2124811382852038667",
     "2124803306019250354",
+    "2124802638978130408",
     "2124801494105076000",
+    "2124800379796050062",
+    "2124797609172758547",
     "2124792869429084236",
     "2124791935462428778",
     "2124790064836378636",
     "2124790058733412360",
+    "2124789523578241287",
     "2124780954204205471",
     "2124773810000011557",
     "2124772487850492161",
@@ -149,6 +158,42 @@
   ],
   "posts": [
     {
+      "post_id": "2125058580462317760",
+      "text": "昔はかっこよかった先輩 (1/2 再",
+      "display_name": "花咲方茶＠漫画更新したよ",
+      "username": "adamant369",
+      "url": "https://x.com/adamant369/status/2125058580462317760",
+      "image_url": "https://pbs.twimg.com/media/HX24DtObwAAEkKH.jpg?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
+    },
+    {
+      "post_id": "2125019020525281575",
+      "text": "うまゆる新エンディングのいたずらタクトさん。",
+      "display_name": "ネコミミ好き之助 火曜日 南2 a15ab",
+      "username": "tsukudasub",
+      "url": "https://x.com/tsukudasub/status/2125019020525281575",
+      "image_url": "https://pbs.twimg.com/media/HX2ViLuaAAEbXoZ.jpg?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
+    },
+    {
+      "post_id": "2124993898007367935",
+      "text": "発掘作業",
+      "display_name": "伊東",
+      "username": "ito_44_3",
+      "url": "https://x.com/ito_44_3/status/2124993898007367935",
+      "image_url": "https://pbs.twimg.com/media/HXsMZWibYAAtQcy.png?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
+    },
+    {
+      "post_id": "2124906077158531492",
+      "text": "画像付き投稿",
+      "display_name": "ゴゴゴ@c109　1日目東２ナ46b",
+      "username": "gogogorx",
+      "url": "https://x.com/gogogorx/status/2124906077158531492",
+      "image_url": "https://pbs.twimg.com/media/HX0uz7JaYAA-j_N.png?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
+    },
+    {
       "post_id": "2124874810572566772",
       "text": "🙌",
       "display_name": "ちいかわアニメ火金",
@@ -165,6 +210,15 @@
       "url": "https://x.com/horideiyasumi/status/2124873319476523499",
       "image_url": "https://pbs.twimg.com/media/HX0Q6FSbUAAi061.png?name=orig",
       "first_seen": "2026-11-23T20:24:39.512108+00:00"
+    },
+    {
+      "post_id": "2124842303118627240",
+      "text": "たまごっち３０周年おめでとうございます🥚✨\n初代を買ってもらったときは小学生でした。\n当時たまごっちのキャラを描きまくったので初代の子達は今も見ないで描けるくらい好きです。\nぎんじろっち推しです🍙\n#Tamagotchi30",
+      "display_name": "やじま@ねこおじ7",
+      "username": "yajima_en",
+      "url": "https://x.com/yajima_en/status/2124842303118627240",
+      "image_url": "https://pbs.twimg.com/media/HXz0KURacAAtyCn.jpg?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
     },
     {
       "post_id": "2124839297341932005",
@@ -275,6 +329,15 @@
       "first_seen": "2026-11-23T20:24:39.512108+00:00"
     },
     {
+      "post_id": "2124802638978130408",
+      "text": "#三連休はフォロワーが増えるらしい\nお気に入りのユメホシ",
+      "display_name": "コガラシの曾孫",
+      "username": "himago000",
+      "url": "https://x.com/himago000/status/2124802638978130408",
+      "image_url": "https://pbs.twimg.com/media/HXzQuyzbgAEfJhW.jpg?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
+    },
+    {
       "post_id": "2124801494105076000",
       "text": "メタモルMV、これでピタッと締めるの何度見ても好きすぎる。もう1周したくなる中毒性がある",
       "display_name": "比宮じょーず",
@@ -282,6 +345,24 @@
       "url": "https://x.com/ramune_himiya/status/2124801494105076000",
       "image_url": "https://pbs.twimg.com/media/HXzOK9gboAA-4P6.jpg?name=orig",
       "first_seen": "2026-11-23T20:24:39.512108+00:00"
+    },
+    {
+      "post_id": "2124800379796050062",
+      "text": "いい兄さんの日\n長谷部と安宅切の対立を粉砕する日光",
+      "display_name": "カド 12/29東3ア58a",
+      "username": "kadododo",
+      "url": "https://x.com/kadododo/status/2124800379796050062",
+      "image_url": "https://pbs.twimg.com/media/HXzOrxabkAAEJDx.jpg?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
+    },
+    {
+      "post_id": "2124797609172758547",
+      "text": "めちゃめちゃ勝手にやってる住職",
+      "display_name": "ジョンソンともゆき",
+      "username": "tomo_yuki2525",
+      "url": "https://x.com/tomo_yuki2525/status/2124797609172758547",
+      "image_url": "https://pbs.twimg.com/media/HXx3Ym-bsAAcPtZ.jpg?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
     },
     {
       "post_id": "2124792869429084236",
@@ -318,6 +399,15 @@
       "url": "https://x.com/period_apos/status/2124790058733412360",
       "image_url": "https://pbs.twimg.com/media/HXzEYBSaAAADYGL.jpg?name=orig",
       "first_seen": "2026-11-23T20:24:39.512108+00:00"
+    },
+    {
+      "post_id": "2124789523578241287",
+      "text": "生涯一美味しかったカップ麺と、親友との思い出。\n#漫画が読めるハッシュタグ",
+      "display_name": "もしゃもぅ電子書籍発売中",
+      "username": "mosyamou",
+      "url": "https://x.com/mosyamou/status/2124789523578241287",
+      "image_url": "https://pbs.twimg.com/media/HXzEzqka4AA_hDK.jpg?name=orig",
+      "first_seen": "2026-11-24T17:59:29.317898+00:00"
     },
     {
       "post_id": "2124780954204205471",
